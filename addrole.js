@@ -1,4 +1,5 @@
-const Discord = require("discord.js");
+const Discord = require("discord.js")
+  ;
 const colors = require("../colors.json");
 var prefix = require("../config.json")
 

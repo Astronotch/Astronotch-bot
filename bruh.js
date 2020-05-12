@@ -4,7 +4,7 @@ const client = new Client();
  
 
 module.exports.run = async (bot, message, args) => {
-    if (message.content === '!bruh') {
+    if (message.content === "!bruh") {
         const attachment = new MessageAttachment('image_son/bruh.mp3');
         message.channel.send(attachment)
         message.channel.send("https://tenor.com/view/disappointment-my-is-immeasurable-and-gif-14420754");

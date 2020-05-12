@@ -4,14 +4,14 @@ const client = new Client();
  
 
 module.exports.run = async (bot, message, args) => {
-    if (message.content === "!dream") {
-        const attachment = new MessageAttachment('image_son/dream.mp4');
+    if (message.content === "!kono_dio_da") {
+        const attachment = new MessageAttachment('image_son/kono_dio_da.mp4');
         message.channel.send(attachment);
-        console.log(message.author.username + " " + "a lancé la commande Dream sur le serveur " + message.guild.name);
+        console.log(message.author.username + " " + "a lancé la commande Kono Dio Da sur le serveur " + message.guild.name);
       }
     };
     
 
 module.exports.help = {
-    name: "dream"
+    name: "kono_dio_da"
 }

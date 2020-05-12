@@ -4,14 +4,14 @@ const client = new Client();
  
 
 module.exports.run = async (bot, message, args) => {
-    if (message.content === "!dream") {
-        const attachment = new MessageAttachment('image_son/dream.mp4');
+    if (message.content === "!ctsur") {
+        const attachment = new MessageAttachment('image_son/sardoche-cetait-sur.mp3');
         message.channel.send(attachment);
-        console.log(message.author.username + " " + "a lancé la commande Dream sur le serveur " + message.guild.name);
+        console.log(message.author.username + " " + "a lancé la commande C'était sur sur le serveur " + message.guild.name);
       }
     };
     
 
 module.exports.help = {
-    name: "dream"
+    name: "ctsur"
 }

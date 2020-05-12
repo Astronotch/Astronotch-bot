@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const prefix = require(`../config.json`);
 
 module.exports.run = (client, message, args) => {
     let début = Date.now();

@@ -4,7 +4,7 @@ const client = new Client();
  
 
 module.exports.run = async (bot, message, args) => {
-    if (message.content === '!report') {
+    if (message.content === "!report") {
         const attachment = new MessageAttachment('image_son/report.mp3');
         message.channel.send(attachment);
         console.log(message.author.username + " " + "a lancé la commande Report sur le serveur " + message.guild.name)

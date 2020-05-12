@@ -1,4 +1,5 @@
-const Discord = require("discord.js");
+const Discord = require("discord.js")
+  ;
 const colors = require("../colors.json");
  
  
@@ -13,12 +14,6 @@ module.exports.run = async (bot, message, args) => {
         message.mentions.users.first().send(`Bienvenue dans l'autre Monde, là où vous avez été kick du serveur **${message.guild.name}** par ce connard de ||${message.author.username}||. Ici tu devras essayer de survivre !`)
             .then(() => {
                 message.channel.send("https://tenor.com/view/omaewamo-shindeiruken-gif-10814050")
-                message.channel.send("5...")
-                message.channel.send("4...")
-                message.channel.send("3...")
-                message.channel.send("2...")
-                message.channel.send("1...")
-                message.channel.send("0!")
                 kickMember.kick()
                     .then((member) => {
                         message.channel.send(`${member.user.username} a été kick par ${message.author.username}`);
